@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>هدية خاصة لك 💝</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Cairo:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header class="hero">
+            <div class="stars"></div>
+            <div class="hero-content">
+                <h1 class="main-title">🎁 هدية خاصة لك 🎁</h1>
+                <p class="subtitle">موقع مصمم بكل حب كهدية منى إليك</p>
+                <div class="heart-animation">💖</div>
+            </div>
+        </header>
+
+        <main>
+            <section class="welcome-section">
+                <div class="card">
+                    <h2>🌟 أهلاً وسهلاً بك 🌟</h2>
+                    <p>هذا الموقع هو هديتي الخاصة لك، صممته بكل حب وعناية ليكون تذكاراً جميلاً لهذه اللحظة المميزة.</p>
+                </div>
+            </section>
+
+            <section class="features-section">
+                <h2 class="section-title">✨ مميزات موقعك الخاص ✨</h2>
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-icon">🎨</div>
+                        <h3>تصميم جميل</h3>
+                        <p>تصميم أنيق ومريح للعين مع ألوان دافئة ومحببة</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">💝</div>
+                        <h3>مصنوع بحب</h3>
+                        <p>كل تفصيلة في هذا الموقع تم تصميمها بعناية واهتمام خاص</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">📱</div>
+                        <h3>متوافق مع الجوال</h3>
+                        <p>يعمل بسلاسة على جميع الأجهزة والشاشات</p>
+                    </div>
+                    <div class="feature-card">
+                        <div class="feature-icon">🌙</div>
+                        <h3>وضع ليلي</h3>
+                        <p>يمكنك التبديل بين الوضع النهاري والليلي</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="interactive-section">
+                <div class="card">
+                    <h2>🎮 قسم تفاعلي 🎮</h2>
+                    <div class="interactive-content">
+                        <button class="magic-button" onclick="createMagic()">اضغط هنا للمفاجأة! ✨</button>
+                        <div id="magic-container"></div>
+                        
+                        <div class="color-changer">
+                            <h3>🎨 غير لون الموقع:</h3>
+                            <div class="color-buttons">
+                                <button class="color-btn" style="background: linear-gradient(45deg, #ff6b6b, #ee5a24)" onclick="changeTheme('red')"></button>
+                                <button class="color-btn" style="background: linear-gradient(45deg, #4ecdc4, #44bd87)" onclick="changeTheme('green')"></button>
+                                <button class="color-btn" style="background: linear-gradient(45deg, #45b7d1, #3742fa)" onclick="changeTheme('blue')"></button>
+                                <button class="color-btn" style="background: linear-gradient(45deg, #f39c12, #e67e22)" onclick="changeTheme('orange')"></button>
+                                <button class="color-btn" style="background: linear-gradient(45deg, #9c88ff, #8c7ae6)" onclick="changeTheme('purple')"></button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="message-section">
+                <div class="card special-card">
+                    <h2>💌 رسالة خاصة لك 💌</h2>
+                    <div class="message-content">
+                        <p>هذا الموقع هو أكثر من مجرد صفحات ويب، إنه تعبير عن التقدير والاحترام. أتمنى أن يجلب لك السعادة والبهجة في كل مرة تزوره.</p>
+                        <p>كل عنصر هنا تم اختياره بعناية ليعكس الجمال والأناقة. استمتع بتصفح موقعك الخاص!</p>
+                        <div class="signature">بكل الحب، MiniMax Agent 💖</div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="gallery-section">
+                <h2 class="section-title">🖼️ معرض الذكريات 🖼️</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <div class="placeholder-image">🌸</div>
+                        <p>لحظات جميلة</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-image">🌟</div>
+                        <p>ذكريات مميزة</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-image">🌈</div>
+                        <p>أوقات سعيدة</p>
+                    </div>
+                    <div class="gallery-item">
+                        <div class="placeholder-image">🦋</div>
+                        <p>لحظات خاصة</p>
+                    </div>
+                </div>
+            </section>
+        </main>
+
+        <footer>
+            <div class="footer-content">
+                <p>تم إنشاء هذا الموقع بـ 💖 كهدية خاصة</p>
+                <p>© 2025 - موقعك الخاص</p>
+                <div class="dark-mode-toggle">
+                    <button onclick="toggleDarkMode()" id="darkModeBtn">🌙 الوضع الليلي</button>
+                </div>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
